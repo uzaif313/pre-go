@@ -2,27 +2,21 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"time"
 )
 
 func main() {
-		
-		//Dynamic data type inference
-			args := os.Args 
-			msg  := "Let's make realtime program"
-		//Data type Declaration and init
-			//var args [] string
-			//args = os.Args
-			var name string
-			name = "Welcome to world of gopher"
-		if len(args) > 1{
-			if args[1] == "1" {
-				fmt.Println(name)
-			}else{
-				fmt.Println(args[1])
-			}
-		}else{
-			fmt.Println(msg)
-		}
-		
+	hourOfDay := time.Now().Hour()
+	greeting  := getGreeting(hourOfDay)
+	fmt.Println(greeting)	
+}
+
+func getGreeting(hour int)string{
+	if hour < 12{
+		return "Good Morning"
+	}else if hour < 18 {
+		return "Good Afternoon"
+	}else {
+		return "Good Evening"
+	}
 }
