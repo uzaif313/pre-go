@@ -5,27 +5,27 @@ import (
 )
 
 func main() {
-	//Simple for loop.
-	//for i:=0; i<5 ; i++{
-		//fmt.Println(i)
-	//}
-	//for loop with variation
-	//isLessThanFive := true
-	//i:= 0
-	//for isLessThanFive {
-	//	if i >= 5{
-	//		isLessThanFive = false
-	//	}
-	//	fmt.Println(i)
-	//	i++
-	//}
-	//	i := 0
-	// for{
-	//	if i >= 5{
-	//		break;
-	//	}
-	//	fmt.Println(i)
-	//	i++
-	//}
-}
+	//  String Array with size 3
+	//	var techStack [3]string
+	//	techStack[0] = "MEAN"
+	//	techStack[1] = "MERN"
+	//	techStack[2] = "React on Rails"
+	//	fmt.Println(techStack)
+	
+	 // Slice declaration 
+	 // var techStack []string
+	  
+	 // techStack  = append(techStack,"MERN")
+	 // techStack = append(techStack,"Nodejs & express")
+	 // techStack = append(techStack,"MEAN ")
+	 //techStack = append(techStack,"socket.io with react")
+	 // fmt.Println(techStack)
+	 
+	 //Declare and initailze slice
+	 var techStack = []string{"Rails","Spring Boot","MEAN","LAMP","MERN"}
+	 //iterate slice with for loop using range
+	 for i:= range(techStack) {
+		fmt.Println(techStack[i])
+	 }
+ }
 
