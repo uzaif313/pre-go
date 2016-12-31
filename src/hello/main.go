@@ -18,8 +18,14 @@ func main() {
 	matt   := rubyist {name:"Matt",exp:20}
 	robert := rubyist {name:"Robert",exp:8}
 	uzaif  := rubyist {name:"uzaif",exp:1}
-	fmt.Println(matt.getPosition())
-	fmt.Println(uzaif.getPosition())
-	fmt.Println(robert.getPosition())
+	//fmt.Println(matt.getPosition())
+	//fmt.Println(uzaif.getPosition())
+	//fmt.Println(robert.getPosition())
+	var devs = []rubyist {uzaif,matt,robert,{"aman",0}}
+	for i:=range(devs){
+		fmt.Println(devs[i])
+	}
+	
 }
+
 
